@@ -1,0 +1,39 @@
+.preface-img{
+    background-image: url("../images/p1.JPG");
+    filter: opacity(0.4);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding:4rem;
+    z-index:-1;
+}
+.preface-p{
+    background-color: rgb(255,255,255);
+    background-color: rgba(255, 255, 255, 0.85);
+    color:black;
+    font-weight: bolder;
+    padding: 2rem;
+    text-align: left;
+    font-size:1.2rem;
+    z-index:-1;
+    display:block;
+}
+.preface-p p{
+    width:75%;
+}
+.an{
+    float:right;
+    height: 20rem;
+    width:13rem;
+    opacity:1;
+    padding:1rem;
+    z-index: 10;
+    position: absolute;
+    padding-left:23rem;
+    padding-top:6rem;
+}
+.an:after{
+    content:"";
+    display:table;
+    clear:both;
+}
