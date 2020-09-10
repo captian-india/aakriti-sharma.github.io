@@ -4,17 +4,14 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding:4rem;
-    z-index:-1;
+    padding:3%;
 }
 .preface-p{
     background-color: rgb(255,255,255);
     background-color: rgba(255, 255, 255, 0.9);
-    color:#bf4f45;
-    font-weight: bolder;
-    padding: 2rem;
+    color:#bf4f45;;
+    padding: 3%;
     text-align: left;
-    font-size:1.2rem;
-    z-index:-1;
+    font-size:1.7rem;
     display:block;
 }

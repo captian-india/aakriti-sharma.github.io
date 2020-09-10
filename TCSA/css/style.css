@@ -88,7 +88,7 @@ nav a:hover{
     text-align: left;
     color:#AC2311;
     width:80%;
-    font-size: 3rem;
+    font-size: 3.5rem;
 }
 .name:after{
     content:"";
@@ -103,20 +103,15 @@ nav a:hover{
     font-size: 2rem;
   }
 .map{
-    float:right;
     height:40%;
-    width:40%;
-}
-.map:after{
-    content:"";
-    display:table;
-    clear:both;
+    width:90%;
 }
 .foter{
     background:#59332A;
     padding: 3rem;
     color: white;
     text-align: left;
+    width:100%;
 }
 .fa {
     padding: 1rem;
