@@ -1,0 +1,143 @@
+
+body{
+    background-color: #e9d8a7;
+    font-size: 3rem;
+    text-align:center;
+    z-index: 1;
+	position: relative;
+}
+.box{    
+    border:0.3rem  #a34935 solid;
+    background-color:#BF4F45;
+    padding: 3rem 1rem ;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 0;
+
+}
+.block {
+	position: relative;
+	width: 100%;
+	background: linear-gradient(0deg,#F2C166,#D97236);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 0;
+    border-radius: 2rem;
+}
+
+.block:before, .block:after {
+	content: '';
+	position: absolute;
+	left: -2px;
+	top: -2px;
+    background: linear-gradient(45deg,#A62103,#F24405,#F27405,#F28705,#F29F05);
+	background-size: 400%;
+	width: calc(100% + 4px);
+	height: calc(100% + 4px);
+    z-index: -1;
+    border-radius: 2rem;
+	animation: steam 20s linear infinite;
+}
+
+@keyframes steam {
+	0% {
+		background-position: 0 0;
+	}
+	50% {
+		background-position: 400% 0;
+	}
+	100% {
+		background-position: 0 0;
+	}
+}
+
+.block:after {
+	filter: blur(2rem);
+}
+
+nav{
+    display: flex;
+    flex-flow: row nowrap;
+    font-size: 1.3rem;
+    width:100%;
+}
+/*nav div{
+    justify-content:start;
+    margin-right: 2rem;
+}*/
+nav a{
+    color:#F2F0D0;
+    text-decoration: none;
+    flex-basis:15%;
+    /*margin: 5rem 1.5rem 5rem 0;*/
+    font-size:1.5rem;
+    padding:5%;
+    justify-content: center;
+}
+nav a:hover{
+    color:#59332A;
+}
+.name img{
+    padding: 1rem;
+    border: none;
+    width: 7rem;
+    height:7rem;
+}
+.name{
+    display:flex;
+    flex-flow:row nowrap;
+    font-family: 'Dancing Script', cursive;
+    text-align: left;
+    color:#AC2311;
+    width:80%;
+    font-size: 3rem;
+}
+.name:after{
+    content:"";
+    display:table;
+    clear:both;
+}
+ .bp{
+    color:white;
+    background-color:#bf4f45;
+    display:block;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 2rem;
+  }
+.map{
+    float:right;
+    height:40%;
+    width:40%;
+}
+.map:after{
+    content:"";
+    display:table;
+    clear:both;
+}
+.foter{
+    background:#59332A;
+    padding: 3rem;
+    color: white;
+    text-align: left;
+}
+.fa {
+    padding: 1rem;
+    padding-left:1.2rem;  
+    display:block;
+    font-size: 1.5rem;
+    text-align: center;
+    text-decoration: none;
+    /*border: 1px solid #F2DC99;*/
+    color: #F2DC99;
+    border-radius: 0.5rem;
+    width:1.5rem ;
+    height:1.5rem;
+    margin: 2rem;
+}
+.fa:hover{
+    opacity: 0.7;
+    font-size:2rem;
+}
+footer p{
+    display:inline;
+    margin-left:3rem;
+}
+

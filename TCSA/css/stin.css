@@ -1,0 +1,20 @@
+.preface-img{
+    background-image: url("../images/p1.JPG");
+    filter: opacity(0.6);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding:4rem;
+    z-index:-1;
+}
+.preface-p{
+    background-color: rgb(255,255,255);
+    background-color: rgba(255, 255, 255, 0.9);
+    color:#bf4f45;
+    font-weight: bolder;
+    padding: 2rem;
+    text-align: left;
+    font-size:1.2rem;
+    z-index:-1;
+    display:block;
+}
