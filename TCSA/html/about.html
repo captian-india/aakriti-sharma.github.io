@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>
+            About Us
+        </title>
+        <link rel="shortcut icon" type="image/png" href="../images/logo.png" />
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+        <link href="../css/style.css" rel="stylesheet">
+        <link href="../css/stab.css" rel="stylesheet">
+    </head>
+    <body>
+        <a name="top"></a>
+            <nav class="bp">
+                <a href="./index.html">Home</a>
+                <a href="./about.html">About Us</a>
+                <a href="./gallery.html">Gallery</a>
+                <a href="https://forms.gle/iRqcz3B9XwbJvkde8" target="_blank">Join Us</a>
+                <a href="#last">Contact Us</a>
+            </nav>  
+            <div class="block">
+                <div class="name">
+                    <img src="../images/logo.png" width="100" height="100">
+                    <p>Tagore Cultural and Social Association</p>
+                </div>
+        </div> <br>
+        </div>  
+        <p class="bp">Letters</p>
+        <div class="row letters">
+  <div class="column">
+    <img src="../images/1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="../images/2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="../images/3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 3</div>
+      <img src="../images/1.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 3</div>
+      <img src="../images/2.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 3</div>
+      <img src="../images/3.jpg" style="width:100%">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="column">
+      <img class="demo cursor" src="../images/1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Letter from President">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="../images/2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Letter from Prime Minister">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="../images/3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Letter from Chief Minister">
+    </div>
+  </div>
+</div>
+<p class="bp">Committee</p>
+<div class="row">
+  <div class="column">
+    <img src="../images/c1.jpg" height="300" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="../images/c2.jpg" height="300"  onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="../images/c3.jpg" height="300"  onclick="myFunction(this);">
+  </div>
+</div>
+
+<!-- The expanding image container -->
+<div class="container">
+  <!-- Close the image -->
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+
+  <!-- Expanded image -->
+  <img id="expandedImg" style="width:100%">
+
+  <!-- Image text -->
+  <div id="imgtext"></div>
+</div>       
+<br><br>
+        <script src="../js/ab.js"></script>
+    </body>
+    <footer>
+        <div class="foter">
+            <a name="last"></a> 
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1957.410384103093!2d73.77086852553099!3d19.96607706123849!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bddeb47f6771959%3A0xacff471a31b171ac!2sJaju%20Vidyalay!5e0!3m2!1sen!2sin!4v1599153925130!5m2!1sen!2sin" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" class="map" id="map"></iframe>
+            <a href="https://www.facebook.com/Tagore-Cultural-And-Social-Association-100448771760699" class="fa fa-facebook" target="_blank" ><p style="margin-left:3.5rem;">Facebook</p></a>
+            <a href="https://www.youtube.com/channel/UCG-hkyExrmpmxcxy_W8HLSQ?view_as=subscriber" class="fa fa-youtube" target="_blank"><p>YouTube</p></a>
+            <i class="fa fa-phone" ><p style="margin-left:3.5rem;">9881070123/9326192249</p></i>
+            <i class="fa fa-envelope-o"><p>tagorenashik@gmail.com</p></i>
+        </div>
+    </footer>
+</html>
