@@ -117,26 +117,30 @@ nav a:hover{
     text-align: left;
     width:100%;
 }
+footer p{
+    display:inline;
+    margin-left:1rem;
+    color: #F2DC99;
+}
 .fa {
-    padding: 1rem;
-    padding-left:3%;  
     display:block;
     font-size: 1.5rem;
-    text-align: center;
+    text-align: left;
     text-decoration: none;
-    /*border: 1px solid #F2DC99;*/
     color: #F2DC99;
-    border-radius: 0.5rem;
-    width:1.5rem ;
-    height:1.5rem;
-    margin-right: 2rem;
+    padding: 1rem;
+    padding-left:3%;  
 }
 .fa:hover{
     opacity: 0.7;
     font-size:2rem;
 }
-footer p{
-    display:inline;
-    margin-left:3rem;
+footer p a{
+    color: #F2DC99;   
+}
+.dev{
+    display:block;
+    font-size:1rem; 
+    text-align: center;
 }
 
