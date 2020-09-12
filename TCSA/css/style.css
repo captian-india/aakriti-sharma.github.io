@@ -35,7 +35,8 @@ body{
 	height: calc(100% + 4px);
     z-index: -1;
     border-radius: 2rem;
-	animation: steam 20s linear infinite;
+    animation: steam 20s linear infinite;
+    width: 100%;
 }
 
 @keyframes steam {
@@ -78,7 +79,7 @@ nav a:hover{
     font-size:1.8rem;
 }
 .name img{
-    margin:auto ;
+    margin:auto 3%;
     border: none;
     width: 7rem;
     height:7rem;
@@ -91,7 +92,7 @@ nav a:hover{
     color:#AC2311;
     width:75%;
     font-size: 3.3rem;
-    margin:auto ;
+    margin:auto 3%;
 }
 .name:after{
     content:"";
@@ -118,7 +119,7 @@ nav a:hover{
 }
 .fa {
     padding: 1rem;
-    padding-left:1.2rem;  
+    padding-left:3%;  
     display:block;
     font-size: 1.5rem;
     text-align: center;
@@ -128,7 +129,7 @@ nav a:hover{
     border-radius: 0.5rem;
     width:1.5rem ;
     height:1.5rem;
-    margin: 2rem;
+    margin-right: 2rem;
 }
 .fa:hover{
     opacity: 0.7;
