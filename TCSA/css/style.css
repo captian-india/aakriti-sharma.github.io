@@ -78,7 +78,7 @@ nav a:hover{
     font-size:1.8rem;
 }
 .name img{
-    padding: 1rem;
+    margin:auto ;
     border: none;
     width: 7rem;
     height:7rem;
@@ -89,8 +89,9 @@ nav a:hover{
     font-family: 'Dancing Script', cursive;
     text-align: left;
     color:#AC2311;
-    width:80%;
-    font-size: 3.5rem;
+    width:75%;
+    font-size: 3.3rem;
+    margin:auto ;
 }
 .name:after{
     content:"";
@@ -110,7 +111,7 @@ nav a:hover{
 }
 .foter{
     background:#59332A;
-    padding: 3rem;
+    padding:3%;
     color: white;
     text-align: left;
     width:100%;
