@@ -49,3 +49,13 @@ function openModal() {
     // Show the container element (hidden with CSS)
     expandImg.parentElement.style.display = "block";
   }
+
+  document.getElementById('galvid').play();
+
+   var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+  if (!isChrome){
+      $('#iframeAudio').remove()
+  }
+  else {
+      $('#playAudio').remove() // just to make sure that it will not have 2x audio in the background 
+  }

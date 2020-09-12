@@ -1,6 +1,6 @@
 .preface-img{
     background-image: url("../images/p1.JPG");
-    filter: opacity(0.6);
+    filter: opacity(0.4);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -8,10 +8,11 @@
 }
 .preface-p{
     background-color: rgb(255,255,255);
-    background-color: rgba(255, 255, 255, 0.9);
-    color:#bf4f45;;
+    background-color: rgba(255, 255, 255, 0.85);
+    color:maroon;
     padding: 3%;
     text-align: left;
     font-size:1.7rem;
     display:block;
 }
+
