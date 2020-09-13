@@ -78,6 +78,7 @@ nav a:hover{
     color:#59332A;
     font-size:1.8rem;
     background-color:#F2C166;
+    border-radius:1rem;
 }
 .name img{
     margin:auto 2%;
@@ -93,7 +94,7 @@ nav a:hover{
     color:#AC2311;
     width:75%;
     font-size: 3.3rem;
-    margin:auto;
+    margin:auto 2%;
 }
 .name:after{
     content:"";
