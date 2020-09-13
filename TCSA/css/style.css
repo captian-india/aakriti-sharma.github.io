@@ -68,15 +68,16 @@ nav{
 nav a{
     color:#F2F0D0;
     text-decoration: none;
-    flex-basis:15%;
+    flex-basis:20%;
     /*margin: 5rem 1.5rem 5rem 0;*/
     font-size:1.5rem;
-    padding:5%;
     justify-content: center;
+    padding:0 6%;
 }
 nav a:hover{
     color:#59332A;
     font-size:1.8rem;
+    background-color:#F2C166;
 }
 .name img{
     margin:auto 2%;

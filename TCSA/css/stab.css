@@ -175,6 +175,26 @@ body{
   border: none;
   margin: 2.5rem 1rem;
   width: 7rem;
-  height:7rem;
-  
+  height:7rem;  
 }
+.vid{
+  padding:0 5%;
+
+  overflow:hidden;
+   position:relative;
+   height:315px;
+   width:420px;
+   margin: 0 auto;
+   border:none;
+}
+.vid iframe{
+  height:100%;
+  width:100%;
+  position:absolute;
+  border:none;
+  z-index: -1;
+  top:0;
+  left:0;
+} 
+
+  

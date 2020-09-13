@@ -6,9 +6,29 @@
 .vid{
    padding:0 5%;
    margin:0 auto;
+   overflow:hidden;
+    position:relative;
+    height:315px;
+    width:420px;
+    margin:3%;
+    border:none;
+
 }
-body iframe{
+/*body iframe{
    width:25rem;
    height:18rem;
    border:none;
+}*/
+.vid iframe{
+   left:0;
+   top:0;
+   height:100%;
+   width:100%;
+   position:absolute;
+   border:none;
+   z-index: -1;
+}
+.bp{
+   width:100%;
+   margin:0;
 }
