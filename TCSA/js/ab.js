@@ -55,11 +55,16 @@ function openModal() {
    var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
   if (!isChrome){
     window.onload = function() {
+      var audio = document.getElementById("playAudio");
       document.getElementById("playAudio").play();
   }
   }
   else {
     window.onload = function() {
+      var audio = document.getElementById("iframAudio");
       document.getElementById("iframeAudio").play();
   }
   } 
+audio.src = URL.createObjectURL("../images.homeaudio.mp3");
+audio.load();
+audio.play();
