@@ -93,7 +93,7 @@ nav a:hover{
     color:#AC2311;
     width:75%;
     font-size: 3.3rem;
-    margin:auto 2%;
+    margin:auto;
 }
 .name:after{
     content:"";
