@@ -52,15 +52,4 @@ function openModal() {
 
   document.getElementById('galvid').play();
 
-  var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor); 
-  if (!isChrome)
-  { window.onload = function() 
-    {  document.getElementById("iframeAudio").remove();  
-  } 
-  }
-   else { window.onload = function() { 
-      document.getElementById("playAudio").remove(); 
-    } }
-audio.src = URL.createObjectURL("../images.homeaudio.mp3");
-audio.load();
-audio.play();
+ 
