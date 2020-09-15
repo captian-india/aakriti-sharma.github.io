@@ -4,26 +4,12 @@
    padding:0;
 }
 .vid{
-   padding:0 5%;
-   margin:0 auto;
-   overflow:hidden;
-    position:relative;
-    height:315px;
-    width:420px;
-    margin:3%;
-    border:none;
-
-}
-.vid iframe{
-   left:0;
-   top:0;
-   height:100%;
-   width:100%;
-   position:absolute;
-   border:none;
-   z-index: -1;
-}
-.bp{
-   width:100%;
+   padding:0;
    margin:0;
+   margin:0 auto;
+}
+body iframe{
+   width:30rem;
+   height:20rem;
+   border:none;
 }
