@@ -179,22 +179,21 @@ body{
 }
 .vid{
   padding:0 5%;
-
+  align-self: center;
   overflow:hidden;
    position:relative;
    height:315px;
-   width:420px;
+   width:500px;
    margin: 0 auto;
    border:none;
 }
 .vid iframe{
-  height:100%;
-  width:100%;
-  position:absolute;
+  width:120%;
+  height:80%;
   border:none;
   z-index: -1;
-  top:0;
-  left:0;
+  margin:0 auto;
+  align-self: center;
 } 
 
   
