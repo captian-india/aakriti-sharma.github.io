@@ -13,44 +13,62 @@
     var value=0;
     en6.onclick = function(){
         window.location.href='#checkout';
+        host.checked=false;
+        mess.checked=false;
             price.innerHTML="200";
             cor.innerHTML="Wealthyfy";
             value=200;
     };
     en5.onclick = function(){
         window.location.href='#checkout';
+        host.checked=false;
+        mess.checked=false;
             price.innerHTML="100";
             cor.innerHTML="Patrick's Gym";
             value=100;
     };
     en4.onclick = function(){
         window.location.href='#checkout';
+        host.checked=false;
+        mess.checked=false;
             price.innerHTML="100";
             cor.innerHTML="Soul Soup";
             value=100;
     };
     en3.onclick = function(){
         window.location.href='#checkout';
+        host.checked=false;
+        mess.checked=false;
             price.innerHTML="300";
             cor.innerHTML="Mobilearn";
             value=300;
     };
     en2.onclick = function(){
         window.location.href='#checkout';
+        host.checked=false;
+        mess.checked=false;
             price.innerHTML="350";
             cor.innerHTML="Confidante";
             value=350;
     };
     en1.onclick = function(){
         window.location.href='#checkout';
+        host.checked=false;
+        mess.checked=false;
             price.innerHTML="300";
             cor.innerHTML="Squidward's Maturans";
             value=300;
     };
     host.onclick= function() {
     if (host.checked == true){
+        if (value==0)
+        {
+            alert("Please Enroll in a course first.")
+            host.checked=false;
+        }
+        else{
         value = value+100;
-        document.getElementById("price").innerHTML = value;
+        document.getElementById("price").innerHTML = value;}
       } else {
         value = value-100;
                 document.getElementById("price").innerHTML = value;
@@ -58,8 +76,14 @@
     };
     mess.onclick=function(){
     if (mess.checked == true){
+        if (value==0)
+        {
+            alert("Please Enroll in a course first.")
+            mess.checked=false;
+        }
+        else{
         value = value+50;
-                        document.getElementById("price").innerHTML = value;
+                        document.getElementById("price").innerHTML = value;}
       } else {
         value = value-50;
                         document.getElementById("price").innerHTML = value;

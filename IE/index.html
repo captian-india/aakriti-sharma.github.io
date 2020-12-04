@@ -4,6 +4,7 @@
          <title>Marinestic</title>
         <!---Bootstarp-->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
         <script src= "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"> </script>
@@ -11,13 +12,15 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+        <link rel="icon" href="./images/fav.png">
         <link rel="stylesheet" href="style.css">   
     </head>
     <body> 
     <nav class="navbar fixed-top navbar-expand-lg  " >
                 <a class="navbar-brand" href="#" style="font-family: 'Dancing Script', cursive; font-size:4rem; color:black" >Marinestic </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon" style="border:none">+</span>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="border:none">
+                  <span class="navbar-toggler-icon" style="border:none"><i class="fa fa-bars"></i></span>
                 </button>
               
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -26,7 +29,7 @@
                       <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
                     </li>
                     <li style="color:black;" class="nav-item">
-                      <a class="nav-link" href="#">ALUMNI</a>
+                      <a class="nav-link" href="#alumni">ALUMNI</a>
                     </li>
                     <li style="color:black;" class="nav-item">
                       <a class="nav-link" href="#courses" >COURSES</a>
@@ -53,10 +56,29 @@ function googleTranslateElementInit() {
                 
               </nav>
               <br><br><br><br><br><br>
-              <div class="dm">              
-        <span class="switch">Dark Mode</span> 
-          
-          </div>
+              <div class="theme-switch-wrapper">
+                    <p class="ed">Enable Dark Mode:</p>
+    <label class="theme-switch" for="checkbox">
+        <input type="checkbox" id="checkbox" />
+        <div class="slider round">
+        </div>
+        
+  </label>
+  
+</div>
+ <script> 
+         
+         
+        $( ".slider" ).on("click", function() { 
+            if( $( "body" ).hasClass( "dark" )) { 
+                $( "body" ).removeClass( "dark" ); 
+                $( ".ed" ).text( "Enable Dark Mode:" ); 
+            } else { 
+                $( "body" ).addClass( "dark" ); 
+                $( ".ed" ).text( "Disable Dark Mode:" ); 
+            } 
+        }); 
+    </script>
 
           <!--
          <div class="container-fluid">
@@ -102,7 +124,7 @@ function googleTranslateElementInit() {
 
          </div> -->
     <div class="container-fluid">
-      <h3 class="top" style="text-align: center; " id="courses">Alumini</h3>
+      <h3 class="top" style="text-align: center; " id="alumni">ALUMNI</h3>
     </div>
    <section>          
     <div class="container pt-3"  >
@@ -111,7 +133,7 @@ function googleTranslateElementInit() {
               <div class="card" >
                   <img src="images/14.jpg"class ="card-img-top" alt="...">
                   
-                  <div class="card-body">
+                  <div class="card-body" >
                     <h5 class="card-title">SQUIDWARD</h5>
                     <p class="card-text">Humor too dark to mention. Mostly gloomy. Super interactive. Faculty for Squidward's Maturans.</p>
                     
@@ -187,7 +209,7 @@ function googleTranslateElementInit() {
     <div>
     </div>
         <div class="container-fluid">
-            <h3 class="top" style="text-align: center; " id="courses">Courses</h3>
+            <h3 class="top" style="text-align: center; " id="courses">COURSES</h3>
           </div>
          <section>          
           <div class="container pt-3"  >
@@ -201,7 +223,8 @@ function googleTranslateElementInit() {
                           <p class="card-text">
                         For Grown ups <br>
                         To learn the after effect of changes in mentality and bulid more connection to avoid future conflicts.</p>
-                          <button id="en1" class="btn btn-primary">Enroll</button>
+                        <i class="fa fa-money"> $300</i><br>
+                          <button id="en1" class="btn btn-primary example_f"><span>Enroll  </button>
                         </div>
                       </div>
                   </div>
@@ -212,7 +235,8 @@ function googleTranslateElementInit() {
                         <div class="card-body">
                           <h5 class="card-title">CONFIDANTE</h5>
                           <p class="card-text"> Human-Humanoid interaction.<br>Human need to learn more and more about the robots for the future to be safe and secure .</p>
-                          <button id="en2" class="btn btn-primary">Enroll</button>
+                          <i class="fa fa-money"> $350</i><br>
+                          <button id="en2" class="btn example_f"><span>Enroll  </button>
                         </div>
                       </div>
                   </div>
@@ -223,7 +247,8 @@ function googleTranslateElementInit() {
                         <div class="card-body">
                           <h5 class="card-title">MOBILEARN</h5>
                           <p class="card-text">Future-Vehicles<br> To learn more and more on the future vehicle to cop up with the future generation and present as well. </p>
-                          <button id="en3" class="btn btn-primary">Enroll</button>
+                          <i class="fa fa-money"> $300</i><br>
+                          <button id="en3" class="btn example_f"><span>Enroll  </button>
                         </div>
                       </div>
                   </div>
@@ -239,7 +264,8 @@ function googleTranslateElementInit() {
                         <div class="card-body">
                           <h5 class="card-title">SOUL SOUP</h5>
                           <p class="card-text">Tunes, rhythms ans melodies. <br> To entertain and sing your heart out.</p>
-                          <button id="en4" class="btn btn-primary">Enroll</button>
+                          <i class="fa fa-money"> $100</i><br>
+                          <button id="en4" class="btn example_f"><span>Enroll  </button>
                         </div>
                       </div>
                   </div>
@@ -250,7 +276,8 @@ function googleTranslateElementInit() {
                         <div class="card-body">
                           <h5 class="card-title">PATRICK's GYM</h5>
                           <p class="card-text">Body Builing<br> One should be healthy meantally as well as physically. Patrick is there to help out all.</p>
-                          <button id="en5" class="btn btn-primary">Enroll</button>
+                          <i class="fa fa-money"> $100</i><br>
+                          <button id="en5" class="btn example_f"><span>Enroll  </button>
                         </div>
                       </div>
                   </div>
@@ -261,7 +288,8 @@ function googleTranslateElementInit() {
                         <div class="card-body">
                           <h5 class="card-title">Wealthyfy</h5>
                           <p class="card-text"> Making Wealth<br> Mr Crab, is there to help to achieve the financial freedom one desire to have.</p>
-                          <button id="en6" class="btn btn-primary">Enroll</button>
+                          <i class="fa fa-money"> $200</i><br>
+                          <button id="en6" class="btn example_f"><span>Enroll  </button>
                         </div>
                       </div>
                   </div>
@@ -271,19 +299,7 @@ function googleTranslateElementInit() {
     </div>
     
 
-         <script> 
-         
-         
-        $( ".switch" ).on("click", function() { 
-            if( $( "body" ).hasClass( "dark" )) { 
-                $( "body" ).removeClass( "dark" ); 
-                $( ".switch" ).text( "Dark Mode" ); 
-            } else { 
-                $( "body" ).addClass( "dark" ); 
-                $( ".switch" ).text( "Light Mode" ); 
-            } 
-        }); 
-    </script>
+        
 <div class="container-fluid">
             <h3 class="top" style="text-align: center; " id="checkout">CHECKOUT</h3>
           </div>
@@ -295,14 +311,19 @@ function googleTranslateElementInit() {
                   
                     <div class="card" >
                         <div class="card-body">
-                          
-                          <p> Additional Services: </p>
-                          <input type="checkbox" id="hostel" >Hostel<img class="as" class="bill" src="./images/bg_light.jpg"/>
-                          <input type="checkbox" id="mess" class="bill" >Mess<img class="as" src="./images/mess.jpg"/>
+                        <div id="sum">
+                        <h4 class="card-title">Course Enrolled:<p style="display:inline " id="cor"> NA</p></h4>
+                          <h4 class="card-title">Total Price: $<p style="display:inline " id="price">0</p></h4></div>
                           <br>
-                          <h5 class="card-title">Course Enrolled:<p style="display:inline " id="cor"></p></h5>
-                          <h5 class="card-title">Total Price: $<p style="display:inline " id="price"></p></h5>
-                          <img src="./images/checkout.jpg" class="co"> 
+                          <p> Add Additional Services: </p>
+                          <input type="checkbox" id="hostel" >Hostel ( +$100 p.a. )<img class="as" class="bill" src="./images/bg_light.jpg"/>
+                          <input type="checkbox" id="mess" class="bill" >Mess ( +50$ p.a.)<img class="as" src="./images/mess.jpg"/>
+                          <br>
+                          <div id="pay"> 
+                          <button id="en6" class="btn example_f"><span>Proceeed to Pay  </button>
+                          <img src="./images/checkout.jpg" class="co">
+                          </div>
+                          
                         </div>
                       </div>
                   </div>

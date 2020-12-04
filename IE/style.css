@@ -22,6 +22,7 @@ section{
     text-align: center; 
     padding: 5px; 
     margin-left: 8px; 
+
 } 
 .dark{ 
     background-color:black; 
@@ -84,7 +85,7 @@ hr.style18:before {
 .card{
   background-color: inherit;
  padding-top: 20%;
- box-shadow: 10px 10px 5px #4169e1;
+ box-shadow: 10px 10px 5px #3EB8EB;
  padding: 3%;
  margin:2rem auto;
  max-width:100%;
@@ -92,7 +93,7 @@ hr.style18:before {
  height:90%;
   }
   h3{
-      background-color: #4169e1 ;
+      background-color: #3EB8EB ;
   }
   .card1{
       padding-top: 20%;
@@ -137,4 +138,116 @@ margin:1rem;
   }
 .co{
   margin:0 auto;
+}
+.example_f {
+  border-radius: 2rem;
+  background: linear-gradient(to right, #FFA500, #FF803E) !important;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 22px;
+  transition: all 0.4s;
+  cursor: pointer;
+  margin: 5px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  z-index:3;
+  display:inline;
+}
+.example_f span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.4s;
+  color: #FFFFFF;
+
+}
+.example_f span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+  color: #FFFFFF;
+
+}
+.example_f:hover span {
+  padding-right: 20px;
+}
+.example_f:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.theme-switch-wrapper {
+  align-items: center;
+}
+.theme-switch {
+  height: 34px;
+  position: relative;
+  width: 60px;
+  margin-left:95%;
+  z-index: 3;
+  margin-top: -4rem;
+}
+
+.theme-switch input {
+  display:none;  
+}
+
+.slider {
+  background-color: #ccc;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: .4s;
+  margin-top:0;
+}
+
+.slider:before {
+  background-color: #fff;
+  bottom: 4px;
+  content: "";
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  transition: .4s;
+  width: 26px;
+
+}
+
+input:checked + .slider {
+  background-color: grey;
+
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+.ed{
+  text-align: end;
+  margin-right:70px;
+  z-index: -1;
+}
+#pay img{
+  margin:0 30% ;
+}
+#pay button{
+  margin:1rem 35%;
+
+}
+#sum{
+  text-align:center;
+  padding:1rem;
+  border:2px slateblue dashed;
 }
