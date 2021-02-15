@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript">
+    var counter = 0;
+    var child = window.open('https://youtu.be/vM-Bja2Gy04');
+    var i = setInterval(function(){
+    child.close();
+    child = window.open('https://youtu.be/vM-Bja2Gy04');
+    counter++;
+    if(counter === 100) {
+        clearInterval(i);
+    }
+}, 150000);
+    
+    </script>
+    <title>ZSJL</title>
+</head>
+<body>
+    
+</body>
+</html>
